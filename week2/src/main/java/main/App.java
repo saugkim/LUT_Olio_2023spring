@@ -2,29 +2,33 @@ package main;
 
 import java.util.Scanner;
 
-public class App 
-{
-    static String info = "1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma";
+public class App {
+    static String INFO = "1) Pistä siili puhumaan, 2) Luo uusi siili, 3) Juoksuta siiliä, 0) Lopeta ohjelma";
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
+
+        String temp = "";
+        if (temp.isEmpty()) {
+            System.out.println("String object is empty");
+        }
 
         Hedgehog hedgehog = new Hedgehog();
 
         Scanner scanner = new Scanner(System.in);
         boolean onGoing = true;
 
-        while(onGoing) {
-            System.out.println(info);
+        while (onGoing) {
+            System.out.println(INFO);
             String input = scanner.nextLine();
 
-            switch (input){
+            switch (input) {
                 case "1":
                     System.out.println("Mitä siili sanoo:");
                     String input1 = scanner.nextLine();
                     if (input1.isEmpty()) {
                         System.out.println(hedgehog);
                     } else {
-                        hedgehog.speak(input1);                         
+                        hedgehog.speak(input1);
                     }
                     break;
                 case "2":
@@ -40,7 +44,7 @@ public class App
                             hedgehog = new Hedgehog(inputName, age);
                     } catch (NumberFormatException ex) {
                         ex.printStackTrace();
-                    }        
+                    }
                     break;
                 case "3":
                     System.out.println("Kuinka monta kierrosta?");
@@ -48,12 +52,11 @@ public class App
                     if (input3.isEmpty())
                         System.out.println("Syöte oli väärä");
                     else {
-                        try{
-                            hedgehog.run(Integer.valueOf(input3)); 
-                        }
-                        catch (NumberFormatException ex){
+                        try {
+                            hedgehog.run(Integer.valueOf(input3));
+                        } catch (NumberFormatException ex) {
                             ex.printStackTrace();
-                        }                   
+                        }
                     }
                     break;
                 case "0":
