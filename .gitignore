@@ -5,3 +5,8 @@ sandbox
 
 /template
 template
+
+**/target/
+/target/
+*/target/**
+**/META-INF/
