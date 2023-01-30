@@ -35,6 +35,20 @@ https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-2
 
 **week3**
 
+Muuttujat, vakiot sekä operaattorit [video]  
+https://www.youtube.com/watch?v=5kO9TGZ0qF8
+
+Tietorakenteita [video]  
+https://www.youtube.com/watch?v=pQLlE_AyuN4
+
+Lisää olio-ohjelmoinnin perusteita [video]  
+https://www.youtube.com/watch?v=oG0XNsL-AIM
+
+Viikon 3 lähdekoodit  
+https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-3
+
+
+
 **week4**
 
 **week5**
