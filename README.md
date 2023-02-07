@@ -51,12 +51,16 @@ https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-3
 
 **week4**
 
+Tiedosto I/O & serialisointi [video]  
+https://www.youtube.com/watch?v=iCFs46I64v8
 
-Javan kirjastoja [video]
-Klikkaa linkkiä https://www.youtube.com/watch?v=k33HVmCamrE
+Javan kirjastoja [video]  
+https://www.youtube.com/watch?v=k33HVmCamrE
 
-Viikon 3 lähdekoodit  
+Viikon 3 lähdekoodit   
 https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-4
+
+
 
 **week5**
 
