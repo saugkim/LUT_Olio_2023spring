@@ -13,7 +13,9 @@ Calculator-luokalla tulee olla tarkasti seuraavat toiminallisuudet:
 
 getAverageGrade(Student s) – palauttaa keskiarvon kurssisuorituksista double-liukulukuna. Mikäli suorituksia ei ole, palauttaa nollan.
 
-getMedianGrade(Student s) – palauttaa mediaaniarvosanan double-liukulukuna. Tämä onnistuu helpoiten järjestämällä tietorakenne suuruusjärjestykseen ja palauttamalla keskimmäinen alkio (tee sorttaus kuitenkin tietorakenteen kopiolle, jotta alkuperäinen rakenne ei muutu – tavallinen Array on toimiva tässä). Mikäli alkioita on parillinen määrä tulee palauttaa kahden keskimmäisen alkion arvojen keskiarvo. Mikäli suorituksia ei ole, palauttaa nollan.
+getMedianGrade(Student s) – palauttaa mediaaniarvosanan double-liukulukuna. 
+Tämä onnistuu helpoiten järjestämällä tietorakenne suuruusjärjestykseen ja palauttamalla keskimmäinen alkio (tee sorttaus kuitenkin tietorakenteen kopiolle, jotta alkuperäinen rakenne ei muutu – tavallinen Array on toimiva tässä). 
+Mikäli alkioita on parillinen määrä tulee palauttaa kahden keskimmäisen alkion arvojen keskiarvo. Mikäli suorituksia ei ole, palauttaa nollan.
 
 
 Student-luokalla seuraavat toiminnallisuudet:
