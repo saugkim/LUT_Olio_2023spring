@@ -51,5 +51,12 @@ https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-3
 
 **week4**
 
+
+Javan kirjastoja [video]
+Klikkaa linkkiä https://www.youtube.com/watch?v=k33HVmCamrE
+
+Viikon 3 lähdekoodit  
+https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-4
+
 **week5**
 
