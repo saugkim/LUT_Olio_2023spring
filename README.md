@@ -64,3 +64,12 @@ https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-4
 
 **week5**
 
+Oliopohjainen suunnittelu [video]  
+https://www.youtube.com/watch?v=bFSpra4CVrc
+
+Luokkakaavion piirtäminen [video]  
+https://www.youtube.com/watch?v=iMfySIlGdbs
+
+
+**week6**
+
