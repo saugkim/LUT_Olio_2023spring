@@ -10,3 +10,5 @@ template
 /target/
 */target/**
 **/META-INF/
+
+*/*.vpd
