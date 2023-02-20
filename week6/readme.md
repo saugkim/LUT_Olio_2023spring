@@ -25,7 +25,7 @@ Ohjelmassa on mahdollisuus rakentaa uusia autoja, lentokoneita ja laivoja esimer
 
 Ohjelmassa on mahdollisuus ajaa, lentää tai seilata luoduilla olioilla. Voit käskyttää kaikki autot ajamaan, lentokoneet lentämään tai laivat seilaamaan. Käytä instanceof-operaattoria ja tyyppimuunnosta, jotta pystyt liikuttamaan oikeita olioita.
 
-
+```
 *** Esimerkkiajo ***
 
 1) Luo uusi kulkuneuvo, 2) Listaa kulkuneuvot 3) Aja autoja, 4) Lennä lentokoneita, 5) Seilaa laivoja, 0) Lopeta ohjelma
@@ -101,3 +101,4 @@ Rauman telakka Oasis of the seas seilaa merten ääriin!
 Kiitos ohjelman käytöstä.
 
 *** Esimerkkiajo päättyy ***
+```
