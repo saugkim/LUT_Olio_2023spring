@@ -73,3 +73,16 @@ https://www.youtube.com/watch?v=iMfySIlGdbs
 
 **week6**
 
+Periytyminen [video]   
+https://www.youtube.com/watch?v=TQ7MQQvcnpU
+
+Lisää periytymisestä [Video]  
+https://www.youtube.com/watch?v=dN0S5wKt4Ls
+
+Viikon 6 lähdekoodit (Animals)    
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-6-1
+
+Viikon 6 lähdekoodit (Rockets)    
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-6-2  
+
+
