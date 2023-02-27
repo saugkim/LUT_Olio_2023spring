@@ -86,3 +86,21 @@ Viikon 6 lähdekoodit (Rockets)
 Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-6-2  
 
 
+**week7**
+
+Abstraktit luokat, rajapinnat ja polymorfismi [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=1coV7Cy6iPo
+
+Sanuli (Wordle) Javalla [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=gg_yjGGOQVE
+
+Viikon 7 lähdekoodit (Animals)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-7-1
+
+Viikon 7 lähdekoodit (Rockets)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-7-2
+
+Viikon 7 lähdekoodit (Sanuli)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-7-3
+
+
