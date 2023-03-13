@@ -104,3 +104,18 @@ Viikon 7 lähdekoodit (Sanuli)
 Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-7-3
 
 
+
+**week8**  
+
+Android-sovelluskehitys [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=Of3KaxnbLn8
+
+Android 101 – ensimmäinen Android-ohjelma [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=cMjN4EBwbTU
+
+Android studion versionhallinta ja ruudun nauhoitus [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=Nlvo5C9isUc
+
+Viikon 8 lähdekoodit  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-8/
+
