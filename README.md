@@ -119,3 +119,6 @@ Klikkaa linkkiä https://www.youtube.com/watch?v=Nlvo5C9isUc
 Viikon 8 lähdekoodit  
 Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-8/
 
+KATSO TÄMÄ ENNEN KUIN TEET MITÄÄN MUUTA  
+Klikkaa linkkiä https://www.youtube.com/watch?v=jOgRESKoiLQ
+
