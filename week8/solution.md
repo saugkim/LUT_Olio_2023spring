@@ -2,7 +2,9 @@ Tool: Android studio (Electric Eel 2022.1.1 Patch 1)
 
 Virtual device: Nexus 5 Pie (Android 9 API 28)  
 
-Source code: in this repoository, Calculator
+Source code: in this repoository, week8/Calculator/
+
+Description: Demo shows simple calculations including input error handling (case of no user input and zero division).
 
 <br>
 
