@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Nelilaskin</string>
+    <string name="plus">+</string>
+    <string name="minus">-</string>
+    <string name="multiple">x</string>
+    <string name="divide">/</string>
+    <string name="result_here">result here</string>
+    <string name="first_input">first input</string>
+    <string name="second_input">second input</string>
+    <string name="first_input_for_calculation">first input for calculation</string>
+    <string name="second_input_for_calculation">second input for calculation</string>
+    <string name="clear">Clear</string>
+</resources>
