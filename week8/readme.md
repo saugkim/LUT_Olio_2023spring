@@ -28,7 +28,7 @@ Ohjelma toimii täysin nelilaskimena.
 
 Ratkaisu palautetaan joko 
 
-1) Moodleen niin, että palautukseen linkataan video, jossa opiskelija demoaa ohjelmassa olevat ominaisuudet ja esittelee nopeasti koodinsa. Video tulisi tehdä tiiviiksi maksimissaan n. minuutin paketiksi.
+(1)Moodleen niin, että palautukseen linkataan video, jossa opiskelija demoaa ohjelmassa olevat ominaisuudet ja esittelee nopeasti koodinsa. Video tulisi tehdä tiiviiksi maksimissaan n. minuutin paketiksi.
 
 Tämän lisäksi palautukseen linkataan oman sovelluksen lähdekoodi.
 
@@ -37,4 +37,4 @@ Paras tapa tähän on työntää viikkotehtävä esim. Github-repoon ja mukaan v
 Voit nauhoittaa tietokoneen ruutua videoksi esim. OBS:lla (https://obsproject.com/, Linux, MacOS ja Windows) tai SimpleScreenRecorderilla (https://www.maartenbaert.be/simplescreenrecorder/, Linux), Zoomilla (Linux, MacOS, Windows) tai Xbox Game Barilla (https://www.tomshardware.com/how-to/screen-record-in-windows, Windows). Myös Teamsillä nauhoitus onnistuu. OBS on näistä monipuolisin ja Zoom yksinkertaisin.
 
 
-2) Demotaan assarille harkoissa, jonka jälkeen assari voi merkata tehtävän suoritetuksi.
+(2)Demotaan assarille harkoissa, jonka jälkeen assari voi merkata tehtävän suoritetuksi.
