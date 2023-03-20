@@ -1,7 +1,9 @@
 
 Android studio Electric Eel 
 
-Description: 
+Implemented features:
+
+
 
 Views (Activities):  
 
