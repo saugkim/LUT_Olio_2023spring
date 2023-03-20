@@ -119,6 +119,24 @@ Klikkaa linkkiä https://www.youtube.com/watch?v=Nlvo5C9isUc
 Viikon 8 lähdekoodit  
 Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-8/
 
-KATSO TÄMÄ ENNEN KUIN TEET MITÄÄN MUUTA  
-Klikkaa linkkiä https://www.youtube.com/watch?v=jOgRESKoiLQ
 
+**week 9**  
+
+Luokkamuuttujat ja -metodit [video]  
+https://www.youtube.com/watch?v=Zphg_Ts9nJY
+
+
+Android 102 – Rakettisovellus [video]  
+https://www.youtube.com/watch?v=aHFC-Y97toU
+
+
+Oliopohjaista suunnittelufilosofiaa [video]  
+https://www.youtube.com/watch?v=ky-gikwK4ko  
+
+
+
+
+
+
+**KATSO TÄMÄ ENNEN KUIN TEET MITÄÄN MUUTA**  
+Klikkaa linkkiä https://www.youtube.com/watch?v=jOgRESKoiLQ
