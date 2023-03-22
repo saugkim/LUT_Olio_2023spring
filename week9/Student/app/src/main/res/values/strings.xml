@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Student</string>
+    <string name="add_student">ADD student</string>
+    <string name="list_students">List Students</string>
+    <string name="firstname">firstname</string>
+    <string name="email_address">email address</string>
+    <string name="lastname">lastname</string>
+    <string name="add_user">ADD USER</string>
+    <string name="select_photo">SELECT PHOTO</string>
+</resources>
