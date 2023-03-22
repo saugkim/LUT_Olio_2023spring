@@ -1,8 +1,9 @@
 
-**Android studio**   
+**Android studio Electric Eel**   
 
-**Test device: Virtual Android 10(Q) API 29**  
+**Test device: Virtual Device, Android 10(Q) API 29**  
 
+**Source code: in this repository /week9/Student/...**
 
 **Views (Activities):**    
 
