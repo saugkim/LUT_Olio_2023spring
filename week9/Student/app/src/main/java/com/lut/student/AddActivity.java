@@ -139,6 +139,7 @@ public class AddActivity extends AppCompatActivity {
         }
 
         storage.addUser(newUser);
+        storage.saveUsersToFile(this);
         Log.i(TAG, "new user added successfully!");
         resetUI();
     }

@@ -9,13 +9,15 @@ import android.view.View;
 public class MainActivity extends AppCompatActivity {
 
     final static String TAG = "ZZ MainActivity";
-    public static int TEST_NUMBER_OF_USER = 4;
+    public static int TEST_NUMBER_OF_USER = 0;
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        UserStorage.getInstance().loadDataFromFile(this);
     }
 
     public void moveToAddView(View view) {
