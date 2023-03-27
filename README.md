@@ -134,6 +134,21 @@ Oliopohjaista suunnittelufilosofiaa [video]
 https://www.youtube.com/watch?v=ky-gikwK4ko  
 
 
+**week 10**
+
+
+Virhetilanteet ja poikkeukset [video]  
+https://www.youtube.com/watch?v=zLy_yyH1Xf0
+
+
+Android 103 – Tiedostojen käsittely ja poikkeusten heitto [video]    
+https://www.youtube.com/watch?v=pPzu9C8v5AY
+
+
+Viikon 10 lähdekoodit  
+https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-10
+
+
 
 
 
