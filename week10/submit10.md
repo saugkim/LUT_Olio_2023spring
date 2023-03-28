@@ -19,7 +19,7 @@ Source code: repository at week9/Student/...
 1. Load data data from file when starting app (in MainActivity onCreate)  
 2. Save user data to file when adding new user (in AddActivity addUser)
 3. Listing users sorted by user's lastname ascending order (in ListActivity recycler-view)
-4. Be able to add multiple completed degrees (suoritettu tutkinto) using UI checkbox (in AddActivity)
+4. Be able to select multiple completed degrees (suoritettu tutkinto) using UI checkbox (in AddActivity)
 5. Showing completed degrees if there is, when listing users (in ListActivity) 
 
 *Image selection feature is hidden in AddAcitivity, scrollview is not implemented to show this*
