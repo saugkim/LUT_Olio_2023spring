@@ -7,4 +7,5 @@
     <string name="lastname">lastname</string>
     <string name="add_user">ADD USER</string>
     <string name="select_photo">SELECT PHOTO</string>
+    <string name="completed_degrees"><i>*** Completed degrees ***</i></string>
 </resources>

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.os.Bundle;
 import android.widget.TextView;
 
+import java.util.Comparator;
 import java.util.List;
 
 public class ListActivity extends AppCompatActivity {
@@ -26,10 +27,15 @@ public class ListActivity extends AppCompatActivity {
         recyclerView = findViewById(R.id.recycler_view);
 
         adapter = new UserListAdapter(new UserListAdapter.ItemDiff(), this);
-        adapter.submitList(storage.getUsers());
+        List<User> sorted = storage.getUsers();
 
-//        List<User> test = storage.getUsers();
-//        adapter.submitList(test);
+        Comparator<User> userComparator = Comparator.comparing(User::getLastName)
+                                    .thenComparing(User::getFirstName)
+                                    .thenComparing(User::getDegreeProgram);
+        sorted.sort(userComparator);
+        adapter.submitList(sorted);
+        //List<User> test = storage.getUsers();
+        //adapter.submitList(test);
 
         recyclerView.setAdapter(adapter);
         recyclerView.setLayoutManager(new LinearLayoutManager(this));

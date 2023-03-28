@@ -1,6 +1,10 @@
 package com.lut.student;
 
+import android.graphics.Typeface;
 import android.net.Uri;
+import android.text.SpannableString;
+import android.text.SpannableStringBuilder;
+import android.text.style.StyleSpan;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -25,6 +29,10 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         textView = itemView.findViewById(R.id.itemText);
         imageView = itemView.findViewById(R.id.itemImage);
 
+        itemView.setOnClickListener(v -> {
+            modifyUser(currentUser);
+        });
+
         itemView.setOnLongClickListener(v -> {
            storage.removeUser(currentUser);
            return true;
@@ -33,16 +41,37 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
 
     public void bind(User user) {
         currentUser = user;
-        textView.setText(user.toString());
-        Log.i(TAG, "image uri: " + user.getImageName());
+        SpannableStringBuilder ssb = new SpannableStringBuilder(user.toString());
 
-        if (user.getImageName() != null)
+        if (user.getDegrees().size() != 0) {
+            String italicText = "\n\n*** Completed degrees ***";
+            StyleSpan italicStyle = new StyleSpan(Typeface.ITALIC);
+
+            SpannableString iss = new SpannableString(italicText);
+            iss.setSpan(italicStyle, 0, italicText.length(), 0);
+            ssb.append(iss);
+
+            for (String s: user.getDegrees()) {
+                ssb.append("\n");
+                ssb.append(s);
+            }
+        }
+
+        textView.setText(ssb, TextView.BufferType.SPANNABLE);
+
+        if (user.getImageName() != null) {
+            Log.d(TAG, "image uri: " + user.getImageName());
             imageView.setImageURI(Uri.parse(user.getImageName()));
+        }
     }
 
     static UserViewHolder create(ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_view, parent, false);
         return new UserViewHolder(view);
+    }
+
+    public void modifyUser(User user) {
+        //do nothing yet;
     }
 }

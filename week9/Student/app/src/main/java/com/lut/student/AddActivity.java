@@ -55,6 +55,12 @@ public class AddActivity extends AppCompatActivity {
             "Laskennallinen tekniikka",
             "Sähkötekniikka"
     };
+    public static String[] DEGREES = new String[] {
+            "Kandidaatin tutkinto",
+            "Diploma-insinoorin tutkinto",
+            "Tekniikan-tohtorin tutkinto",
+            "Uimamaisteri"
+    };
 
     ActivityResultLauncher<String> mGetContent;
 
@@ -82,6 +88,7 @@ public class AddActivity extends AppCompatActivity {
         radioButtons = new RadioButton[] { rb0, rb1, rb2, rb3 };
         for (int i =0; i< radioButtons.length; i++) {
             radioButtons[i].setText(DEGREE_PROGRMAS[i]);
+            radioButtons[i].setId(i);
         }
 
         resetUI();
@@ -140,7 +147,7 @@ public class AddActivity extends AppCompatActivity {
 
         storage.addUser(newUser);
         storage.saveUsersToFile(this);
-        Log.i(TAG, "new user added successfully!");
+        Log.d(TAG, "new user added successfully!");
         resetUI();
     }
 
