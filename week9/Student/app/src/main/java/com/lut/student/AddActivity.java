@@ -17,6 +17,7 @@ import android.util.Log;
 import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
@@ -29,6 +30,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.Locale;
 
@@ -46,6 +48,7 @@ public class AddActivity extends AppCompatActivity {
     ImageView imageView;
     Uri image_uri;
 
+    CheckBox[] boxes;
     final static String REL_LOCATION = Environment.DIRECTORY_DCIM;
     final static String IMAGE_TYPE = "image/png";
 
@@ -55,9 +58,10 @@ public class AddActivity extends AppCompatActivity {
             "Laskennallinen tekniikka",
             "Sähkötekniikka"
     };
-    public static String[] DEGREES = new String[] {
+
+    final static String[] DEGREES = new String[] {
             "Kandidaatin tutkinto",
-            "Diploma-insinoorin tutkinto",
+            "Diploma-insinöörin tutkinto",
             "Tekniikan-tohtorin tutkinto",
             "Uimamaisteri"
     };
@@ -86,10 +90,16 @@ public class AddActivity extends AppCompatActivity {
         RadioButton rb2 = findViewById(R.id.rb2);
         RadioButton rb3 = findViewById(R.id.rb3);
         radioButtons = new RadioButton[] { rb0, rb1, rb2, rb3 };
-        for (int i =0; i< radioButtons.length; i++) {
-            radioButtons[i].setText(DEGREE_PROGRMAS[i]);
-            radioButtons[i].setId(i);
-        }
+//        for (int i =0; i< radioButtons.length; i++) {
+//            radioButtons[i].setText(DEGREE_PROGRMAS[i]);
+//            radioButtons[i].setId(i);
+//        }
+
+        CheckBox cb1 = findViewById(R.id.checkBox1);
+        CheckBox cb2 = findViewById(R.id.checkBox2);
+        CheckBox cb3 = findViewById(R.id.checkBox3);
+        CheckBox cb4 = findViewById(R.id.checkBox4);
+        boxes = new CheckBox[] { cb1, cb2, cb3, cb4 };
 
         resetUI();
 
@@ -127,6 +137,17 @@ public class AddActivity extends AppCompatActivity {
         return null;
     }
 
+    public ArrayList<String> getCompletedDegrees() {
+        ArrayList<String> ret = new ArrayList<>();
+
+        for(int i = 0; i<boxes.length;i++) {
+            if (boxes[i].isChecked()) {
+                ret.add(DEGREES[i]);
+            }
+        }
+        return ret;
+    }
+
     public void addUser()  {
         String mFirstname = firstname.getText().toString();
         String mLastname = lastname.getText().toString();
@@ -144,6 +165,7 @@ public class AddActivity extends AppCompatActivity {
             Log.d(TAG, "addUser() user selected image and image_uri is " + image_uri);
             newUser.setImageName(image_uri.toString());
         }
+        newUser.setDegrees(getCompletedDegrees());
 
         storage.addUser(newUser);
         storage.saveUsersToFile(this);
@@ -159,6 +181,9 @@ public class AddActivity extends AppCompatActivity {
         imageView.setImageDrawable(ContextCompat.getDrawable(this, android.R.drawable.ic_menu_gallery));
         image_uri = null;
         hideKeyboard();
+        for (CheckBox box: boxes) {
+            box.setChecked(false);
+        }
     }
 
     public void hideKeyboard() {

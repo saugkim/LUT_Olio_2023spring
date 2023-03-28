@@ -13,7 +13,6 @@ public class MainActivity extends AppCompatActivity {
     final static String TAG = "ZZ MainActivity";
     public static int NUMBER_OF_USER_FOR_TEST = 4;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -28,26 +27,26 @@ public class MainActivity extends AppCompatActivity {
 
     public void moveToListView(View view) {
         if (UserStorage.getInstance().getUsers().size() == 0) {
-            addUsersForTest(NUMBER_OF_USER_FOR_TEST);
+            addSomeUsersForTest(NUMBER_OF_USER_FOR_TEST);
         }
         startActivity(new Intent(this, ListActivity.class));
     }
 
-    public void addUsersForTest(int n) {
-        User u0 = new User("James","Abcde","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u1 = new User("Brian","Zombie","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u2 = new User("Susan","Gigachad","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u3 = new User("Mikko","Azure","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u4 = new User("Maria","Bbc","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u5 = new User("Jane","Alley","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u6 = new User("Amanda","Casino","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u7 = new User("Kally","Terabit","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u8 = new User("Pikachu","Eevee","firstname.lastname@lut.fi","GOOD PROGRAM");
-        User u9 = new User("Mew","Turbo","firstname.lastname@lut.fi","GOOD PROGRAM");
+    public void addSomeUsersForTest(int n) {
+        User u0 = new User("James","Adobe","adobe.james@lut.fi", getResources().getString(R.string.sahkotekniikka));
+        User u1 = new User("Brian","Zombie","zomebie.brian@lut.fi", getResources().getString(R.string.laskennallinen_tekniikka));
+        User u2 = new User("Susan","Gigachad","gigachad.susan@lut.fi", getResources().getString(R.string.tietotekniikka));
+        User u3 = new User("Mikko","Azure","azure.mikko@lut.fi", getResources().getString(R.string.tuotantotalous));
+        User u4 = new User("Maria","Bbc","bbc.maria@lut.fi", getResources().getString(R.string.sahkotekniikka));
+        User u5 = new User("Jane","Alley","alley.jane@lut.fi", getResources().getString(R.string.sahkotekniikka));
+        User u6 = new User("Amanda","Casino","casino.amanda@lut.fi", getResources().getString(R.string.sahkotekniikka));
+        User u7 = new User("Kally","Terabit","terabit.kally@lut.fi", getResources().getString(R.string.sahkotekniikka));
+        User u8 = new User("Pikachu","Eevee","eevee.pikachu@lut.fi", getResources().getString(R.string.sahkotekniikka));
+        User u9 = new User("Mew","Turbo","turbo.mew@lut.fi", getResources().getString(R.string.sahkotekniikka));
 
         ArrayList<String> degrees = new ArrayList<>();
-        degrees.add(AddActivity.DEGREES[0]);
-        degrees.add(AddActivity.DEGREES[3]);
+        degrees.add(getResources().getString(R.string.kandidaatin_tutkinto));
+        degrees.add(getResources().getString(R.string.uimamaisteri));
 
         u0.setDegrees(degrees);
         u1.setDegrees(degrees);
@@ -56,5 +55,7 @@ public class MainActivity extends AppCompatActivity {
         for (int i = 0; i <n; i++) {
             UserStorage.getInstance().addUser(users[i]);
         }
+
+        UserStorage.getInstance().saveUsersToFile(this);
     }
 }

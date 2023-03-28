@@ -29,24 +29,23 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         textView = itemView.findViewById(R.id.itemText);
         imageView = itemView.findViewById(R.id.itemImage);
 
-        itemView.setOnClickListener(v -> {
-            modifyUser(currentUser);
-        });
-
         itemView.setOnLongClickListener(v -> {
            storage.removeUser(currentUser);
            return true;
+        });
+
+        itemView.setOnClickListener(v -> {
+            modifyUser(currentUser);
         });
     }
 
     public void bind(User user) {
         currentUser = user;
-        SpannableStringBuilder ssb = new SpannableStringBuilder(user.toString());
 
+        SpannableStringBuilder ssb = new SpannableStringBuilder(user.toString());
         if (user.getDegrees().size() != 0) {
             String italicText = "\n\n*** Completed degrees ***";
             StyleSpan italicStyle = new StyleSpan(Typeface.ITALIC);
-
             SpannableString iss = new SpannableString(italicText);
             iss.setSpan(italicStyle, 0, italicText.length(), 0);
             ssb.append(iss);
@@ -56,7 +55,6 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
                 ssb.append(s);
             }
         }
-
         textView.setText(ssb, TextView.BufferType.SPANNABLE);
 
         if (user.getImageName() != null) {

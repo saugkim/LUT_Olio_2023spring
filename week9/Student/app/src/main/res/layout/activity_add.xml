@@ -14,7 +14,6 @@
         android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:autofillHints="@string/firstname"
-        android:ems="10"
         android:hint="@string/firstname"
         android:inputType="textPersonName"
         android:textAlignment="center"
@@ -30,10 +29,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:autofillHints="@string/lastname"
-        android:ems="10"
         android:hint="@string/lastname"
         android:inputType="textPersonName"
         android:textAlignment="center"
@@ -49,13 +46,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="32dp"
         android:autofillHints="@string/email_address"
-        android:ems="10"
         android:hint="@string/email_address"
         android:inputType="textEmailAddress"
-        android:onClick="addUser"
         android:textAlignment="center"
         android:textSize="20sp"
         android:textStyle="bold"
@@ -70,8 +64,9 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="2dp"
         android:layout_marginEnd="32dp"
+        android:background="#EFF8F7"
         app:layout_constraintBottom_toTopOf="@id/linearLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -81,29 +76,80 @@
             android:id="@+id/rb0"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RB0" />
+            android:text="@string/tietotekniikka" />
 
         <RadioButton
             android:id="@+id/rb1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RB1" />
+            android:text="@string/tuotantotalous" />
 
         <RadioButton
             android:id="@+id/rb2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RB2" />
+            android:text="@string/laskennallinen_tekniikka" />
 
         <RadioButton
             android:id="@+id/rb3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RB3" />
+            android:text="@string/sahkotekniikka" />
     </RadioGroup>
 
     <LinearLayout
         android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="4dp"
+        android:background="#EFF8F7"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        app:layout_constraintBottom_toTopOf="@id/addButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:orientation="vertical">
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kandidaatin_tutkinto" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/diploma_insinoorin_tutkinto" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/tekniikan_tohtorin_tutkinto" />
+
+        <CheckBox
+            android:id="@+id/checkBox4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/uimamaisteri" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/add_user"
+        app:layout_constraintBottom_toTopOf="@id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="100dp"
         android:layout_marginStart="32dp"
@@ -112,10 +158,9 @@
         android:background="#EFF8F7"
         android:orientation="horizontal"
         android:padding="8dp"
-        app:layout_constraintBottom_toTopOf="@id/addButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/radioGroup">
+        app:layout_constraintTop_toBottomOf="@id/addButton">
 
         <Button
             android:id="@+id/galleryButton"
@@ -132,15 +177,5 @@
             android:layout_weight="2.5"
             app:srcCompat="@android:drawable/ic_menu_gallery" />
     </LinearLayout>
-
-    <Button
-        android:id="@+id/addButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="@string/add_user"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/linearLayout" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
