@@ -35,7 +35,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         });
 
         itemView.setOnClickListener(v -> {
-            modifyUser(currentUser);
+            updateUser(currentUser);
         });
     }
 
@@ -51,7 +51,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
             ssb.append(iss);
 
             for (String s: user.getDegrees()) {
-                ssb.append("\n");
+                ssb.append("\n- ");
                 ssb.append(s);
             }
         }
@@ -69,7 +69,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         return new UserViewHolder(view);
     }
 
-    public void modifyUser(User user) {
+    public void updateUser(User user) {
         //do nothing yet;
     }
 }
