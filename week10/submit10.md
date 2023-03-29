@@ -13,6 +13,13 @@ Source code: repository at week9/Student/...
 
 <br>
 
+**Demo clip**
+
+https://user-images.githubusercontent.com/25344978/228253577-15ad6f08-76e5-48a6-889a-037d7ae6971d.mp4
+
+
+<br>
+
 **Implemented features**  
 
 ```
@@ -24,14 +31,6 @@ Source code: repository at week9/Student/...
 
 *Image selection feature is hidden in AddAcitivity, scrollview is not implemented to show this*
 ```
-
-
-<br>
-
-
-**Demo clip**
-
-https://user-images.githubusercontent.com/25344978/228253577-15ad6f08-76e5-48a6-889a-037d7ae6971d.mp4
 
 
 
