@@ -31,6 +31,9 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
 
         itemView.setOnLongClickListener(v -> {
            storage.removeUser(currentUser);
+           storage.saveUsersToFile(itemView.getContext()); //??
+           Log.d(TAG, "selected user was removed from memory and data file");
+           // but UI not updating accordingly recyclerview (how to wake up?)
            return true;
         });
 
