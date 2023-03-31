@@ -33,6 +33,7 @@ public class ListActivity extends AppCompatActivity {
                                     .thenComparing(User::getFirstName)
                                     .thenComparing(User::getDegreeProgram);
         sorted.sort(userComparator);
+
         adapter.submitList(sorted);
         //List<User> test = storage.getUsers();
         //adapter.submitList(test);

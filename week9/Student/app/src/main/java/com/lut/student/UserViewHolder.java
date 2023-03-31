@@ -1,5 +1,6 @@
 package com.lut.student;
 
+import android.app.AlertDialog;
 import android.graphics.Typeface;
 import android.net.Uri;
 import android.text.SpannableString;
@@ -30,14 +31,28 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
         imageView = itemView.findViewById(R.id.itemImage);
 
         itemView.setOnLongClickListener(v -> {
-           storage.removeUser(currentUser);
-           storage.saveUsersToFile(itemView.getContext()); //??
-           Log.d(TAG, "selected user was removed from memory and data file");
+            AlertDialog.Builder builder = new AlertDialog.Builder(itemView.getContext());
+            builder.setTitle("Warning!");
+            builder.setMessage("Removing " + currentUser.getFirstName() + " " + currentUser.getLastName() + " permanently.\n\nARE YOU SURE?");
+            builder.setPositiveButton("CONFIRM", (dialog, which) -> {
+                storage.removeUser(currentUser);
+                storage.saveUsersToFile(itemView.getContext()); //??
+                Log.d(TAG, "selected user was removed from memory and data file");
+                dialog.dismiss();
+            });
+            builder.setNegativeButton("CANCEL", (dialog, which) -> {
+                Log.d(TAG, "Remove user action canceled");
+                dialog.dismiss();
+            });
+            AlertDialog alertDialog = builder.create();
+            alertDialog.show();
+
            // but UI not updating accordingly recyclerview (how to wake up?)
            return true;
         });
 
         itemView.setOnClickListener(v -> {
+            int userIndex = storage.getUsers().indexOf(currentUser);
             updateUser(currentUser);
         });
     }
@@ -69,6 +84,7 @@ public class UserViewHolder extends RecyclerView.ViewHolder {
     static UserViewHolder create(ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext())
                 .inflate(R.layout.item_view, parent, false);
+
         return new UserViewHolder(view);
     }
 
