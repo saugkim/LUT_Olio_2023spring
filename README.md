@@ -149,8 +149,25 @@ Viikon 10 lähdekoodit
 https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-10
 
 
+**week 11**
 
+Geneerisyys Javassa [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=aMUIp5tBKSc
 
+Iteraattorit [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=W0APXCnPbVo
+
+Anonyymit funktiot [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=vPwMBVI0y5E
+
+Android 104 – Rakettisovelluksen jatkokehitys [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=0_b5hrrO5ZU
+
+Viikon 11 lähdekoodit (puhtaat java-pätkät)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-11-1
+
+Viikon 11 lähdekoodit (Android)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-11-2
 
 
 **KATSO TÄMÄ ENNEN KUIN TEET MITÄÄN MUUTA**  
