@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">OstosKori</string>
+    <string name="update_item">UPDATE ITEM</string>
+    <string name="delete_item">DELETE ITEM</string>
+    <string name="add_new_item">ADD NEW ITEM</string>
+    <string name="cancel">Cancel</string>
+</resources>
