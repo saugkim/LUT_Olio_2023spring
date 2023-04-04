@@ -5,7 +5,7 @@ Test device: Virtual device, Android 10(Q) API 29
 Source code: repository at week11/Ostos/...
 
 
-**Views (Activities):**    
+**Views (Activities)**    
 
 |ManageActivity(new)|MainActivity|ManageActivity(edit)|
 |-|-|-|
@@ -17,20 +17,17 @@ Source code: repository at week11/Ostos/...
 https://user-images.githubusercontent.com/25344978/229900847-1378a950-99c2-4298-8ae8-41676eacd29c.mp4
 
 
-
 <br>
 <br>
 
 **Implemented features**  
 
 ```
-1. Load data data from file when starting app (in MainActivity onCreate)  
-2. Save user data to file when adding new user (in AddActivity addUser)
-3. Listing users sorted by user's lastname ascending order (in ListActivity recycler-view)
-4. Be able to select multiple completed degrees (suoritettu tutkinto) using UI checkbox (in AddActivity)
-5. Showing completed degrees if there is, when listing users (in ListActivity) 
-
-*Image selection feature is hidden in AddAcitivity, scrollview is not implemented to show this*
+1. Add new item in item managing activity
+2. Show list using recyclerview
+3. Remove from main and edit screen
+4. Edit item in edit screen (item managing activity)
+5. Sort list by item name(toggling descending and ascending order) and date(from old to new) 
 ```
 
 
