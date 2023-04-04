@@ -23,11 +23,11 @@ https://user-images.githubusercontent.com/25344978/229900847-1378a950-99c2-4298-
 **Implemented features**  
 
 ```
-1. Add new item in item managing activity
+1. Add new shopping item in item managing activity
 2. Show list using recyclerview
-3. Remove from main and edit screen
-4. Edit item in edit screen (item managing activity)
-5. Sort list by item name(toggling descending and ascending order) and date(from old to new) 
+3. Remove selected item from main(list view) and edit screen - without warning
+4. Edit selected item in edit screen (item managing activity)
+5. Sort list by item name(toggling descending and ascending order) and by date(from old to new) 
 ```
 
 
