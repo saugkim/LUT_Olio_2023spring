@@ -31,6 +31,7 @@ https://user-images.githubusercontent.com/25344978/229900847-1378a950-99c2-4298-
 
 * date picker and additional info are optional feature here  
 * today(current day) is default date-time and info is null, when there is no user input. 
-* date can be modified when edit the shopping item later, after modification original date is not available therefore sorting by date is based on the modified date-time (not the original date).
+* date can be modified when edit the shopping item later, after modification original date is not available, 
+therefore sorting by date is based on the modified date-time (not the original date).
 * I tried to figure out the meaning of aika(date of shopping??) here, I added sort of date-time information as a string. 
 ```
