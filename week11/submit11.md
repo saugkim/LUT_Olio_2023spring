@@ -29,9 +29,12 @@ https://user-images.githubusercontent.com/25344978/229900847-1378a950-99c2-4298-
 4. Edit selected item in edit screen (item managing activity)
 5. Sort list by item name(toggling descending and ascending order) and by date(from old to new) 
 
-* date picker and additional info are optional feature here  
+* I am not sure that I am supposed to implement with one activity or not, I tried to put all first but UI was getting busy and ugly...
+* date picker and additional info are optional feature:  
 * today(current day) is default date-time and info is null, when there is no user input. 
-* date can be modified when edit the shopping item later, after modification original date is not available, 
-therefore sorting by date is based on the modified date-time (not the original date).
-* I tried to figure out the meaning of aika(date of shopping??) here, I added sort of date-time information as a string. 
+* date can be modified when edit the shopping item later, after date modification, original date is not available.
+* when user changed item name or item info, but not the date, date remains same as before (not automatically changed as a date of editing, it can be easily implemented though)
+* sorting by date can be based on either original date or edited date
+* I am bit lost with the concept of the time in this task
+* I tried to figure out the meaning of aika(date of shopping?), I added kind of date-time information as a string to sort items by time and name. 
 ```
