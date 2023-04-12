@@ -170,5 +170,21 @@ Viikon 11 lähdekoodit (Android)
 Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-11-2
 
 
-**KATSO TÄMÄ ENNEN KUIN TEET MITÄÄN MUUTA**  
-Klikkaa linkkiä https://www.youtube.com/watch?v=jOgRESKoiLQ
+**Week 12**
+
+Sisä- ja anonyymit luokat [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=HVMiFoUeX5M
+
+Olioiden kopioinnista [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=osUIGTs_AEs 
+
+Android 105 – Fragmentit [video]  
+Klikkaa linkkiä https://www.youtube.com/watch?v=XnU_ywU5gOU
+
+Viikon 12 lähdekoodit (puhtaat java-pätkät)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-12-1  
+
+Viikon 12 lähdekoodit (Android)  
+Klikkaa linkkiä https://version.lab.fi/Erno.Vanhala/olio-ohjelmointi-viikko-12-2  
+
+
