@@ -17,9 +17,7 @@ public class MainActivity extends AppCompatActivity {
     TabLayout tabLayout;
     ViewPager2 viewPager;
     ViewPagerAdapter adapter;
-    TextView textView;
-
-    static String[] TITLES = new String[] {"HOME", "LIST", "ADD"};
+    static final String[] TITLES = new String[] {"HOME", "LIST", "ADD"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,9 +28,7 @@ public class MainActivity extends AppCompatActivity {
         viewPager = findViewById(R.id.view_pager);
 
         addSomeItemsForTest();
-
         setViewPagerAdapter();
-
         new TabLayoutMediator(tabLayout, viewPager,
                 (tab, position) -> tab.setText(TITLES[position])).attach();
 
