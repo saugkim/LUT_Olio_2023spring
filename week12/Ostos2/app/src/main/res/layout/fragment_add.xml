@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddFragment">
+
+    <LinearLayout
+        android:padding="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/etItemName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:hint="item to buy"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/etItemInfo"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="start|top"
+            android:hint="additional info for this item"
+            android:inputType="text" />
+
+        <RadioButton
+            android:id="@+id/rbItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:text="Is this item important?" />
+
+        <TextView
+            android:id="@+id/textViewDate"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="24sp"
+            android:layout_margin="10dp"
+            android:text="@string/date_input_text" />
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="24dp"
+            android:text="Create" />
+    </LinearLayout>
+
+
+</FrameLayout>
