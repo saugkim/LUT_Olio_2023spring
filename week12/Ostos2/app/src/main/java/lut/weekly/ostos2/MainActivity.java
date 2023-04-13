@@ -49,19 +49,19 @@ public class MainActivity extends AppCompatActivity {
         Item i1 = new Item("Omena");
         Item i2 = new Item("Peruna", "Kotimaan");
         Item i3 = new Item("Kanamuna", "Omega-6");
-        Item i4 = new Item("Juusto");
+     //   Item i4 = new Item("Juusto");
         i1.setDate("2000-06-01.08:20");
         i2.setDate("1990-01-01.08:20");
         i3.setDate("2022-12-03.10:20");
-        i4.setDate("2011-09-09.03:20");
+    //    i4.setDate("2011-09-09.03:20");
         i1.setImportant(false);
         i2.setImportant(false);
         i3.setImportant(false);
-        i4.setImportant(false);
+    //    i4.setImportant(false);
 
         ItemStorage.getInstance().addItem(i1);
         ItemStorage.getInstance().addItem(i2);
         ItemStorage.getInstance().addItem(i3);
-        ItemStorage.getInstance().addItem(i4);
+      //  ItemStorage.getInstance().addItem(i4);
     }
 }
