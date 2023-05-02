@@ -11,13 +11,14 @@ https://www.geeksforgeeks.org/how-to-create-a-chatbot-in-android-with-brainshop-
 
 https://github.com/ChinmayMunje/GFG-Bot
 
+```
 dependency:   
 implementation ‘com.android.volley:volley:1.1.1’
  
 <!--permissions for internet-->  
 <uses-permission android:name="android.permission.INTERNET" />  
 <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />  
-
+```
 
 
 
