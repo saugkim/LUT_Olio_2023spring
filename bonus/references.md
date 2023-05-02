@@ -22,3 +22,12 @@ implementation ‘com.android.volley:volley:1.1.1’
 
 
 
+https://stackoverflow.com/questions/44912239/automatically-scroll-to-bottom-of-recyclerview
+
+```
+LinearLayoutManager mLinearLayoutManager = new LinearLayoutManager(Application.Context);
+mLinearLayoutManager.setStackFromEnd(true); 
+mRecyclerView.SetLayoutManager(mLinearLayoutManager);
+mRecyclerView.scrollToPosition(someList.Count - 1);
+//smoothScrollToPosition 
+```
